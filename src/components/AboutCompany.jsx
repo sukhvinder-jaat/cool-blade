@@ -10,7 +10,7 @@ const AboutCompany = () => {
           </p>
         </div>
         <div className=" lg:w-8/12 w-full">
-          <div className=" bg-white shadow-[0px_18px_6px_-15px_#DCEFE5D6] rounded-lg pt-10 sm:ps-10 px-5 md:pb-[50px] pb-7 sm:pe-[50px] flex md:flex-row flex-col-reverse justify-between relative z-10">
+          <div className=" bg-white shadow-[0px_18px_6px_-15px_#DCEFE5D6] rounded-lg pt-10 sm:ps-10 px-5 md:pb-[50px] pb-7 sm:pe-[50px] flex md:flex-row flex-col-reverse justify-between relative z-10 hover:shadow-2xl transition-all ease-in-out duration-300">
             <div>
               <p className=" font-poppins font-semibold text-lg text-fireFly max-w-[461px] mb-[30px]">
                 This staggering amount of waste poses significant environmental
@@ -27,7 +27,7 @@ const AboutCompany = () => {
               <img
                 src={about}
                 alt="profile"
-                className=" max-w-[50px] w-full"
+                className=" max-w-[50px] w-full object-cover"
                 sizes="100vw"
                 loading="lazy"
               />

@@ -38,7 +38,7 @@ const Usa = () => {
     ],
   };
   return (
-    <div className="max-w-[1080px] mx-auto px-4 2xl:px-0 py-[44px]">
+    <div className="max-w-[1080px] mx-auto px-4 2xl:px-0 md:py-[44px] py-6">
       <div className="usa_slider">
         <Slider {...usaSlider}>
           {usaImage.map((content, index) => {
