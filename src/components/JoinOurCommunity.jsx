@@ -4,7 +4,7 @@ import AboutCompany from "./AboutCompany";
 import planting from "../assets/about/planting.webp";
 const JoinOurCommunity = () => {
   return (
-    <div className=" bg-aquaSprint" id="problem">
+    <div className=" bg-aquaSprint">
       <div className=" bg-join bg-no-repeat bg-cover md:pt-[90px] pt-10 md:pb-[100px] pb-10 mb-12 md:mb-[100px]">
         <div className="max-w-[1170px] mx-auto px-4 2xl:px-0">
           <p className=" font-poppins font-semibold md:text-4xl text-3xl leading-[normal] text-center uppercase md:mb-9 mb-4">

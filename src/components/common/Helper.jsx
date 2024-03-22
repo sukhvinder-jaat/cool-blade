@@ -10,6 +10,10 @@ import nbc from "../../assets/usa/nbc.webp";
 import student from "../../assets/join_our_community/student.svg";
 import farmer from "../../assets/join_our_community/farmer.svg";
 import waste from "../../assets/join_our_community/waste.svg";
+import woodImage1 from "../../assets/problem/wood1.png";
+import woodImage2 from "../../assets/problem/wood2.png";
+import woodImage3 from "../../assets/problem/wood3.png";
+import woodImage4 from "../../assets/problem/wood4.png";
 // nav bar links
 export const navLink = [
   { link: "home", href: "#home", icon: <Plus /> },
@@ -35,3 +39,5 @@ export const joinProfile = [
   { profile: farmer, title: "I'm a Farmer" },
   { profile: waste, title: "I make agricultural waste" },
 ];
+// problem Wood
+export const problemWood = [woodImage1, woodImage2, woodImage3, woodImage4];

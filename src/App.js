@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import BackToTop from "./components/common/BackToTop";
 import { useEffect, useState } from "react";
 import PreLoader from "./components/common/PreLoader";
+import Problem from "./components/Problem";
 function App() {
   const [loading, setLoading] = useState(true);
   // FOR FULL SCREEN LOADING
@@ -20,15 +21,12 @@ function App() {
   return (
     <>
       {" "}
-      {loading && <PreLoader />}
-      {loading === false && (
-        <>
-          <BackToTop />
-          <Hero />
-          <Usa />
-          <JoinOurCommunity />
-        </>
-      )}
+      {/* {loading && <PreLoader />}
+      {loading === false && <></>} <BackToTop /> */}
+      <Hero />
+      <Usa />
+      <JoinOurCommunity />
+      <Problem />
     </>
   );
 }
