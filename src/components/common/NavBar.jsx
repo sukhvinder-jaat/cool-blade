@@ -12,7 +12,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="bg-white py-[26px] relative z-10 flex-grow-0">
+      <nav className="bg-white py-[26px] relative z-40 flex-grow-0">
         <div className="max-w-[1380px] mx-auto px-4 2xl:px-0">
           <div className="flex justify-between items-center">
             <div className="flex-shrink-0">
@@ -56,8 +56,8 @@ const NavBar = () => {
       </nav>{" "}
       <div
         className={`${
-          isNavBarOpen ? "top-[95px]" : "top-[-120%]"
-        } xl:hidden overflow-hidden transition-all ease-in-out duration-300 bg-white shadow-xl absolute w-full`}
+          isNavBarOpen ? "top-[10%]" : "top-[-120%]"
+        } xl:hidden overflow-hidden py-6 transition-all ease-liner duration-900 bg-white shadow-xl absolute z-10 w-full`}
         id="mobile-menu"
       >
         <div className="ps-5 pt-2 pb-3 space-y-5">

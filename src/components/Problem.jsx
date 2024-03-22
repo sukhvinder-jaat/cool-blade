@@ -10,7 +10,7 @@ const Problem = () => {
         className="max-w-[1170px] mx-auto px-4 2xl:px-0 mt-[100px] pb-[224px] relative z-10"
         id="about"
       >
-        <div className=" flex flex-wrap mb-[100px]">
+        <div className=" flex flex-wrap mb-12 md:mb-[100px]">
           <div className=" lg:w-4/12 w-full flex justify-center lg:justify-start lg:mb-0 mb-7">
             <img src={girl} alt="girl" className=" w-full max-w-[262px]" />
           </div>
