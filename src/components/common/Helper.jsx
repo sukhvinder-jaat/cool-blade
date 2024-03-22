@@ -1,4 +1,13 @@
-import { Contact, Leaf, Plus, ProblemCenter, Team } from "./Icon";
+import {
+  Contact,
+  Email,
+  Leaf,
+  Location,
+  Mobile,
+  Plus,
+  ProblemCenter,
+  Team,
+} from "./Icon";
 import cnn from "../../assets/usa/cnn.webp";
 import today from "../../assets/usa/today.webp";
 import news from "../../assets/usa/news.webp";
@@ -10,10 +19,10 @@ import nbc from "../../assets/usa/nbc.webp";
 import student from "../../assets/join_our_community/student.svg";
 import farmer from "../../assets/join_our_community/farmer.svg";
 import waste from "../../assets/join_our_community/waste.svg";
-import woodImage1 from "../../assets/problem/wood1.png";
-import woodImage2 from "../../assets/problem/wood2.png";
-import woodImage3 from "../../assets/problem/wood3.png";
-import woodImage4 from "../../assets/problem/wood4.png";
+import woodImage1 from "../../assets/problem/wood1.webp";
+import woodImage2 from "../../assets/problem/wood2.webp";
+import woodImage3 from "../../assets/problem/wood3.webp";
+import woodImage4 from "../../assets/problem/wood4.webp";
 import moss from "../../assets/team/harper.png";
 import tom from "../../assets/team/tom.png";
 import ray from "../../assets/team/ray.png";
@@ -42,6 +51,20 @@ export const joinProfile = [
   { profile: student, title: "I'm a Student" },
   { profile: farmer, title: "I'm a Farmer" },
   { profile: waste, title: "I make agricultural waste" },
+];
+// contact
+export const contact = [
+  { href: "tel:9306922645", icon: <Mobile />, title: "+52 (55) 65990366" },
+  {
+    href: "#address",
+    icon: <Location />,
+    title: "1 De Haro St. San Francisco, CA 94107 (415) 985-2400",
+  },
+  {
+    href: "mailto:info@address.com",
+    icon: <Email />,
+    title: "info@address.com",
+  },
 ];
 // team
 export const teamProfile = [

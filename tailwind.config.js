@@ -4,11 +4,13 @@ module.exports = {
     extend: {
       backgroundImage: {
         join: "url('../src/assets/background/join.webp')",
+        invest: "url('../src/assets/want_to_invest/girl.png')",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
       fontSize: {
+        xsm: "13px",
         sm: "14px",
         md: "15px",
         base: "16px",
@@ -23,6 +25,7 @@ module.exports = {
         fireFly: "#0F2233",
         aquaSprint: "#F0F9F4",
         riverBed: "#3C4D5A",
+        coolGrey: "#96A3A7",
       },
     },
   },

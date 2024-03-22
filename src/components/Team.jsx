@@ -1,10 +1,11 @@
 import React from "react";
 import roper from "../assets/team/harper.png";
 import { teamProfile } from "./common/Helper";
+import WantToInvest from "./WantToInvest";
 const Team = () => {
   return (
-    <div className=" bg-aquaSprint bg-join bg-cover bg-no-repeat pt-[100px]">
-      <div className="max-w-[1170px] mx-auto px-4 2xl:px-0">
+    <div className=" bg-aquaSprint bg-join bg-cover bg-no-repeat py-[100px]">
+      <div className="max-w-[1170px] mx-auto px-4 2xl:px-0 pb-[50px]">
         <p className=" font-poppins font-semibold md:text-4xl text-3xl leading-[normal] text-center uppercase mb-[50px]">
           <span className=" text-hippyGreen">Our</span> Team
         </p>
@@ -49,6 +50,7 @@ const Team = () => {
           );
         })}
       </div>
+      <WantToInvest />
     </div>
   );
 };

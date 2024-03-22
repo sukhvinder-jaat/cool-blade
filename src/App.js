@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import PreLoader from "./components/common/PreLoader";
 import Problem from "./components/Problem";
 import Team from "./components/Team";
+import Footer from "./components/common/Footer";
 function App() {
   const [loading, setLoading] = useState(true);
   // FOR FULL SCREEN LOADING
@@ -29,6 +30,7 @@ function App() {
       <JoinOurCommunity />
       <Problem />
       <Team />
+      <Footer />
     </>
   );
 }
