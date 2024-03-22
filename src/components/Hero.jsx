@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "./common/NavBar";
-import tree from "../assets/hero/tree.png";
+import tree from "../assets/hero/tree.webp";
 const Hero = () => {
   return (
     <div className=" md:min-h-[70vh] flex flex-col">

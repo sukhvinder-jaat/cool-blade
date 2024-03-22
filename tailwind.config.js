@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        join: "url('../src/assets/background/join.png')",
+        join: "url('../src/assets/background/join.webp')",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

@@ -1,7 +1,7 @@
 import React from "react";
 import { joinProfile } from "./common/Helper";
 import AboutCompany from "./AboutCompany";
-import planting from "../assets/about/planting.png";
+import planting from "../assets/about/planting.webp";
 const JoinOurCommunity = () => {
   return (
     <div className=" bg-aquaSprint" id="problem">
