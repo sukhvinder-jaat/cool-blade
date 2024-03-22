@@ -5,7 +5,7 @@ import rightTree from "../assets/problem/right_tree.png";
 import { problemWood } from "./common/Helper";
 const Problem = () => {
   return (
-    <div className=" relative max-w-[1920px]" id="problem">
+    <div className=" relative max-w-[1920px] overflow-hidden" id="problem">
       <div
         className="max-w-[1170px] mx-auto px-4 2xl:px-0 mt-[100px] pb-[224px] relative z-10"
         id="about"

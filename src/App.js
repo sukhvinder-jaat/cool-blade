@@ -8,16 +8,17 @@ import BackToTop from "./components/common/BackToTop";
 import { useEffect, useState } from "react";
 import PreLoader from "./components/common/PreLoader";
 import Problem from "./components/Problem";
+import Team from "./components/Team";
 function App() {
   const [loading, setLoading] = useState(true);
   // FOR FULL SCREEN LOADING
-  useEffect(() => {
-    document.body.classList.add("not-scroll-before-loading");
-    setTimeout(() => {
-      setLoading(false);
-      document.body.classList.remove("not-scroll-before-loading");
-    }, 3000);
-  }, []);
+  // useEffect(() => {
+  //   document.body.classList.add("not-scroll-before-loading");
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //     document.body.classList.remove("not-scroll-before-loading");
+  //   }, 3000);
+  // }, []);
   return (
     <>
       {" "}
@@ -27,6 +28,7 @@ function App() {
       <Usa />
       <JoinOurCommunity />
       <Problem />
+      <Team />
     </>
   );
 }

@@ -14,6 +14,10 @@ import woodImage1 from "../../assets/problem/wood1.png";
 import woodImage2 from "../../assets/problem/wood2.png";
 import woodImage3 from "../../assets/problem/wood3.png";
 import woodImage4 from "../../assets/problem/wood4.png";
+import moss from "../../assets/team/harper.png";
+import tom from "../../assets/team/tom.png";
+import ray from "../../assets/team/ray.png";
+import chad from "../../assets/team/chad.png";
 // nav bar links
 export const navLink = [
   { link: "home", href: "#home", icon: <Plus /> },
@@ -38,6 +42,46 @@ export const joinProfile = [
   { profile: student, title: "I'm a Student" },
   { profile: farmer, title: "I'm a Farmer" },
   { profile: waste, title: "I make agricultural waste" },
+];
+// team
+export const teamProfile = [
+  {
+    profile: moss,
+    title: "Harper Moss",
+    post: "Co-Founder CEO",
+    description: [
+      "Harper Moss, at just 16 years old, conceived the idea for CarbonZero.eco out of a desire to better the world. Her initial exploration led her through avenues such as tree planting in the Amazon and soil amendments.",
+      "However, it was in conversations with leaders in the CDR industry that illuminated the enormous potential of BioChar for carbon removal.",
+    ],
+  },
+  {
+    profile: tom,
+    title: "Tom Moss",
+    post: "Co-Founder President",
+    description: [
+      "Harper Moss's father is a multi-exited serial entrepreneur with extensive experience in hardware and software.",
+      "He served as an Android executive at Google from 2007 to 2010, founded and served as CEO of 3LM (acquired by Motorola), was an Entrepreneur in Residence at Accel Partners, founded and served as CEO of Nextbit (acquired by Razer), served as Senior Vice President and General Manager of Mobile at Razer, and co-founded several other successful startups, including one that went public. ",
+      "Currently, he is the CEO of Skydio GK, the Asia-Pacific subsidiary of Skydio Inc., the maker of the world's most advanced autonomous drones.",
+    ],
+  },
+  {
+    profile: ray,
+    title: "Gregory Ray",
+    post: "Co-Founder COO",
+    description: [
+      "Over the past two decades, Gregory has built and managed businesses. In 2007, he co-founded OEM.com, linking suppliers in the east with buyers in the west. The following year, he co-founded Seek Mobile Interactive, creators of the first 3D gaming engine for the newly launched Apple iPhone.",
+      "Their SeekTech engine powered the top-grossing game, Riddim Ribbon, designed by will.i.am of the Black Eyed Peas. Tapulous acquired SeekTech, later becoming Disney Mobile post-acquisition by The Walt Disney Company.",
+    ],
+  },
+  {
+    profile: chad,
+    title: "Chad Jensen",
+    post: "Plant Engineer",
+    description: [
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. ",
+      "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks",
+    ],
+  },
 ];
 // problem Wood
 export const problemWood = [woodImage1, woodImage2, woodImage3, woodImage4];
