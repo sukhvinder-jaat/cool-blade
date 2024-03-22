@@ -2,6 +2,7 @@ import React from "react";
 import { joinProfile } from "./common/Helper"; // Importing profiles of people to join the community
 import AboutCompany from "./AboutCompany"; // Importing the AboutCompany component
 import planting from "../assets/about/planting.webp"; // Importing an image related to planting
+import plantingSmall from "../assets/about/planting_small.png"; // Importing an image related to planting
 
 const JoinOurCommunity = () => {
   return (
@@ -65,7 +66,14 @@ const JoinOurCommunity = () => {
         <img
           src={planting}
           alt="planting"
-          className="w-full"
+          className="w-full small:block hidden"
+          sizes="100vw"
+          loading="lazy"
+        />
+        <img
+          src={plantingSmall}
+          alt="planting"
+          className="w-full small:hidden"
           sizes="100vw"
           loading="lazy"
         />

@@ -3,7 +3,7 @@ import girl from "../assets/problem/girl.png"; // Importing an image of a girl
 import leftTree from "../assets/problem/left_tree.png"; // Importing an image of a tree on the left
 import rightTree from "../assets/problem/right_tree.png"; // Importing an image of a tree on the right
 import { problemWood } from "./common/Helper"; // Importing problem wood images from a helper file
-
+import treeSmall from "../assets/problem/tree_small.png";
 const Problem = () => {
   return (
     <div className="relative max-w-[1920px] overflow-hidden" id="problem">
@@ -58,7 +58,11 @@ const Problem = () => {
                 }`}
                 key={index}
               >
-                <img src={image} alt="wood" className="w-full" />
+                <img
+                  src={image}
+                  alt="wood"
+                  className="w-full transition-all ease-in-out duration-300 hover:scale-95"
+                />
               </div>
             );
           })}
@@ -68,12 +72,17 @@ const Problem = () => {
       <img
         src={leftTree}
         alt="left tree"
-        className="max-w-[400px] absolute start-0 bottom-0"
+        className="max-w-[400px] absolute start-0 bottom-0 small:block hidden"
       />
       <img
         src={rightTree}
         alt="right tree"
-        className="max-w-[250px] absolute end-0 bottom-0"
+        className="max-w-[250px] absolute end-0 bottom-0 small:block hidden"
+      />
+      <img
+        src={treeSmall}
+        alt="tree small"
+        className=" small:hidden block absolute bottom-0"
       />
     </div>
   );

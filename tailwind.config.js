@@ -2,9 +2,13 @@ module.exports = {
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        small: "430px",
+      },
       backgroundImage: {
         join: "url('../src/assets/background/join.webp')",
         invest: "url('../src/assets/want_to_invest/girl.png')",
+        investSmall: "url('../src/assets/background/invest_small.png')",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
