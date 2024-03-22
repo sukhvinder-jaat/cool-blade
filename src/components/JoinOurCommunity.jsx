@@ -42,7 +42,9 @@ const JoinOurCommunity = () => {
                       {content.title}
                     </p>
                     <p className="font-poppins font-normal md:text-md text-sm text-fireFly mb-10">
-                      {content.description}
+                      Our vision is to create a cleaner and healthier
+                      environment by reducing the release of cow waste into the
+                      Earth's atmosphere in the United States.
                     </p>
                     <button
                       className="border-[2px] border-hippyGreen rounded-[33px] p-[5px_24px_5px_24px] font-poppins font-semibold text-sm md:text-md leading-[24px] flex items-center justify-center text-hippyGreen min-w-[137px] hover:bg-hippyGreen transition-all ease-in-out duration-300 hover:text-white"

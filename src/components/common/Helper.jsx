@@ -48,9 +48,9 @@ export const usaImage = [
 ];
 // joinProfile
 export const joinProfile = [
-  { profile: student, title: "I'm a Student" },
-  { profile: farmer, title: "I'm a Farmer" },
-  { profile: waste, title: "I make agricultural waste" },
+  { profile: student, title: "I'm a Student", },
+  { profile: farmer, title: "I'm a Farmer", },
+  { profile: waste, title: "I make agricultural waste", },
 ];
 // contact
 export const contact = [
