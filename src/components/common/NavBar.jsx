@@ -20,6 +20,8 @@ const NavBar = () => {
                 src={Logo}
                 alt="logo"
                 className="w-full sm:max-w-[244px] max-w-[200px]"
+                sizes="100vw"
+                loading="lazy"
               />
             </div>
             <div className="flex items-center xl:hidden relative z-10">
@@ -29,6 +31,7 @@ const NavBar = () => {
                 className="bg-fireFly inline-flex items-center justify-center p-2 rounded-md hover:scale-90 transition-all ease-in-out duration-300 text-white hover:bg-fireFly  focus:outline-none focus:bg-fireFly focus:text-white group"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
+                aria-label="Open Mobile Menu"
               >
                 {!isNavBarOpen ? <NavLine /> : <Cross />}
               </button>

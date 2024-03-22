@@ -28,6 +28,8 @@ const JoinOurCommunity = () => {
                         src={content.profile}
                         alt="profile"
                         className=" max-w-[50px] w-full"
+                        sizes="100vw"
+                        loading="lazy"
                       />
                     </div>
                     <p className=" font-poppins font-semibold md:text-xl text-base text-fireFly mb-5">
@@ -38,7 +40,12 @@ const JoinOurCommunity = () => {
                       environment by reducing the release of cow waste into the
                       Earth's atmosphere in the United States.
                     </p>
-                    <button className=" border-[2px] border-hippyGreen rounded-[33px] p-[5px_24px_5px_24px] font-poppins font-semibold text-sm md:text-md leading-[24px] flex items-center justify-center text-hippyGreen min-w-[137px] hover:bg-hippyGreen transition-all ease-in-out duration-300 hover:text-white">
+                    <button
+                      className=" border-[2px] border-hippyGreen rounded-[33px] p-[5px_24px_5px_24px] font-poppins font-semibold text-sm md:text-md leading-[24px] flex items-center justify-center text-hippyGreen min-w-[137px] hover:bg-hippyGreen transition-all ease-in-out duration-300 hover:text-white"
+                      aria-controls="start"
+                      aria-expanded="start btn"
+                      aria-label="start btn"
+                    >
                       start now
                     </button>
                   </div>
@@ -50,7 +57,13 @@ const JoinOurCommunity = () => {
       </div>
       <AboutCompany />
       <div className="max-w-[1440px] mx-auto mt-[-110px]">
-        <img src={planting} alt="planting" className=" w-full" />
+        <img
+          src={planting}
+          alt="planting"
+          className=" w-full"
+          sizes="100vw"
+          loading="lazy"
+        />
       </div>
     </div>
   );

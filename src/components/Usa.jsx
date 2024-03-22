@@ -48,6 +48,8 @@ const Usa = () => {
                 src={content.path}
                 alt="image"
                 className={`${content.width}`}
+                sizes="100vw"
+                loading="lazy"
               />
             );
           })}

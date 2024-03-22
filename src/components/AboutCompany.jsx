@@ -24,7 +24,13 @@ const AboutCompany = () => {
               </p>
             </div>
             <div className="w-[92px] h-[92px] bg-gradient-to-br from-hippyGreen to-treeGreen rounded-full flex items-center justify-center md:mb-0 mb-4 md:mt-2">
-              <img src={about} alt="profile" className=" max-w-[50px] w-full" />
+              <img
+                src={about}
+                alt="profile"
+                className=" max-w-[50px] w-full"
+                sizes="100vw"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
