@@ -1,5 +1,6 @@
 import React from "react";
 import about from "../assets/about/chemical.svg"; // Importing the image
+import { Tilt } from "react-tilt";
 
 const AboutCompany = () => {
   return (
@@ -13,31 +14,33 @@ const AboutCompany = () => {
         </div>
         {/* Content section */}
         <div className="lg:w-8/12 w-full">
-          <div className="bg-white shadow-[0px_18px_6px_-15px_#DCEFE5D6] rounded-lg pt-10 sm:ps-10 px-5 md:pb-[50px] pb-7 sm:pe-[50px] flex md:flex-row flex-col-reverse justify-between relative z-10 hover:shadow-2xl transition-all ease-in-out duration-300">
-            {/* Text content */}
-            <div>
-              <p className="font-poppins font-semibold text-lg text-fireFly max-w-[461px] mb-[30px]">
-                This staggering amount of waste poses significant environmental
-                challenges, including increased carbon.
-              </p>
-              <p className="max-w-[461px] font-poppins font-normal text-md text-fireFly">
-                As awareness of environmental issues grows, it becomes
-                increasingly important for the landscaping industry to adopt
-                sustainable practices and minimize waste generation. By
-                implementing strategies.
-              </p>
+          <Tilt options={{ scale: 1.02, max: 10 }}>
+            <div className="bg-white shadow-[0px_18px_6px_-15px_#DCEFE5D6] rounded-lg pt-10 sm:ps-10 px-5 md:pb-[50px] pb-7 sm:pe-[50px] flex md:flex-row flex-col-reverse justify-between relative z-10 hover:shadow-2xl transition-all ease-in-out duration-300">
+              {/* Text content */}
+              <div>
+                <p className="font-poppins font-semibold text-lg text-fireFly max-w-[461px] mb-[30px]">
+                  This staggering amount of waste poses significant
+                  environmental challenges, including increased carbon.
+                </p>
+                <p className="max-w-[461px] font-poppins font-normal text-md text-fireFly">
+                  As awareness of environmental issues grows, it becomes
+                  increasingly important for the landscaping industry to adopt
+                  sustainable practices and minimize waste generation. By
+                  implementing strategies.
+                </p>
+              </div>
+              {/* Image */}
+              <div className="w-[92px] h-[92px] bg-gradient-to-br from-hippyGreen to-treeGreen rounded-full flex items-center justify-center md:mb-0 mb-4 md:mt-2">
+                <img
+                  src={about}
+                  alt="profile"
+                  className="max-w-[50px] w-full object-cover"
+                  sizes="100vw"
+                  loading="lazy"
+                />
+              </div>
             </div>
-            {/* Image */}
-            <div className="w-[92px] h-[92px] bg-gradient-to-br from-hippyGreen to-treeGreen rounded-full flex items-center justify-center md:mb-0 mb-4 md:mt-2">
-              <img
-                src={about}
-                alt="profile"
-                className="max-w-[50px] w-full object-cover"
-                sizes="100vw"
-                loading="lazy"
-              />
-            </div>
-          </div>
+          </Tilt>
         </div>
       </div>
     </div>

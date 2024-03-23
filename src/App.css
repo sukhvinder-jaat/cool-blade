@@ -130,3 +130,6 @@
 .bg-100 {
   background-size: 100% 100% !important;
 }
+.custom_curser {
+  cursor: url("./assets/hero/tree.webp");
+}

@@ -4,6 +4,7 @@ import leftTree from "../assets/problem/left_tree.png"; // Importing an image of
 import rightTree from "../assets/problem/right_tree.png"; // Importing an image of a tree on the right
 import { problemWood } from "./common/Helper"; // Importing problem wood images from a helper file
 import treeSmall from "../assets/problem/tree_small.png";
+import { Tilt } from "react-tilt";
 const Problem = () => {
   return (
     <div className="relative max-w-[1920px] overflow-hidden" id="problem">
@@ -57,16 +58,18 @@ const Problem = () => {
           {problemWood.map((image, index) => {
             return (
               <div
-                className={`lg:w-3/12 md:w-4/12 sm:w-6/12 w-full px-[15px] ${
+                className={`lg:w-3/12 md:w-4/12 sm:w-6/12 w-full sm:px-[15px] ${
                   index % 2 === 0 ? "" : " sm:translate-y-[70px]"
                 }`}
                 key={index}
               >
-                <img
-                  src={image}
-                  alt="wood"
-                  className="w-full transition-all ease-in-out duration-300 hover:scale-95"
-                />
+                <Tilt options={{ scale: 1.02, max: 10 }}>
+                  <img
+                    src={image}
+                    alt="wood"
+                    className="w-full transition-all ease-in-out duration-300 hover:scale-95"
+                  />
+                </Tilt>
               </div>
             );
           })}

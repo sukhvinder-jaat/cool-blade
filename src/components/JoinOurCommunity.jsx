@@ -3,6 +3,7 @@ import { joinProfile } from "./common/Helper"; // Importing profiles of people t
 import AboutCompany from "./AboutCompany"; // Importing the AboutCompany component
 import planting from "../assets/about/planting.webp"; // Importing an image related to planting
 import plantingSmall from "../assets/about/planting_small.png"; // Importing an image related to planting
+import { Tilt } from "react-tilt";
 
 const JoinOurCommunity = () => {
   return (
@@ -25,36 +26,38 @@ const JoinOurCommunity = () => {
             {joinProfile.map((content, index) => {
               return (
                 <div
-                  className="lg:w-4/12 md:w-6/12 w-full md:px-[15px] md:max-w-full sm:max-w-[400px] max-w-[332px]"
+                  className="lg:w-4/12 md:w-6/12 w-full md:px-[15px] md:max-w-full sm:max-w-[400px] max-w-[332px] custom_curser"
                   key={index}
                 >
-                  <div className="shadow-[0px_18px_6px_-15px_#DCEFE5D6] hover:shadow-2xl transition-all ease-in-out duration-300 px-7 w-full pt-10 pb-11 bg-white rounded-lg h-full">
-                    <div className="w-[92px] h-[92px] bg-gradient-to-br from-hippyGreen to-treeGreen rounded-full flex items-center justify-center mb-[50px]">
-                      <img
-                        src={content.profile}
-                        alt="profile"
-                        className="max-w-[50px] w-full"
-                        sizes="100vw"
-                        loading="lazy"
-                      />
+                  <Tilt options={{ scale: 1.02, max: 15 }}>
+                    <div className="shadow-[0px_18px_6px_-15px_#DCEFE5D6] hover:shadow-2xl transition-all ease-in-out duration-300 px-7 w-full pt-10 pb-11 bg-white rounded-lg h-full">
+                      <div className="w-[92px] h-[92px] bg-gradient-to-br from-hippyGreen to-treeGreen rounded-full flex items-center justify-center mb-[50px]">
+                        <img
+                          src={content.profile}
+                          alt="profile"
+                          className="max-w-[50px] w-full"
+                          sizes="100vw"
+                          loading="lazy"
+                        />
+                      </div>
+                      <p className="font-poppins font-semibold md:text-xl text-base text-fireFly mb-5">
+                        {content.title}
+                      </p>
+                      <p className="font-poppins font-normal md:text-md text-sm text-fireFly mb-10">
+                        Our vision is to create a cleaner and healthier
+                        environment by reducing the release of cow waste into
+                        the Earth's atmosphere in the United States.
+                      </p>
+                      <button
+                        className="border-[2px] border-hippyGreen rounded-[33px] p-[5px_24px_5px_24px] font-poppins font-semibold text-sm md:text-md leading-[24px] flex items-center justify-center text-hippyGreen min-w-[137px] hover:bg-hippyGreen transition-all ease-in-out duration-300 hover:text-white"
+                        aria-controls="start"
+                        aria-expanded="start btn"
+                        aria-label="start btn"
+                      >
+                        start now
+                      </button>
                     </div>
-                    <p className="font-poppins font-semibold md:text-xl text-base text-fireFly mb-5">
-                      {content.title}
-                    </p>
-                    <p className="font-poppins font-normal md:text-md text-sm text-fireFly mb-10">
-                      Our vision is to create a cleaner and healthier
-                      environment by reducing the release of cow waste into the
-                      Earth's atmosphere in the United States.
-                    </p>
-                    <button
-                      className="border-[2px] border-hippyGreen rounded-[33px] p-[5px_24px_5px_24px] font-poppins font-semibold text-sm md:text-md leading-[24px] flex items-center justify-center text-hippyGreen min-w-[137px] hover:bg-hippyGreen transition-all ease-in-out duration-300 hover:text-white"
-                      aria-controls="start"
-                      aria-expanded="start btn"
-                      aria-label="start btn"
-                    >
-                      start now
-                    </button>
-                  </div>
+                  </Tilt>
                 </div>
               );
             })}
