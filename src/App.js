@@ -13,28 +13,24 @@ import Footer from "./components/common/Footer";
 function App() {
   const [loading, setLoading] = useState(true);
   // FOR FULL SCREEN LOADING
-  useEffect(() => {
-    document.body.classList.add("not-scroll-before-loading");
-    setTimeout(() => {
-      setLoading(false);
-      document.body.classList.remove("not-scroll-before-loading");
-    }, 3000);
-  }, []);
+  // useEffect(() => {
+  //   document.body.classList.add("not-scroll-before-loading");
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //     document.body.classList.remove("not-scroll-before-loading");
+  //   }, 3000);
+  // }, []);
   return (
     <>
       {" "}
-      {loading && <PreLoader />}
-      {loading === false && (
-        <>
-          <BackToTop />
-          <Hero />
-          <Usa />
-          <JoinOurCommunity />
-          <Problem />
-          <Team />
-          <Footer />
-        </>
-      )}
+      {/* {loading && <PreLoader />}
+      {loading === false && <></>} <BackToTop /> */}
+      <Hero />
+      <Usa />
+      <JoinOurCommunity />
+      <Problem />
+      <Team />
+      <Footer />
     </>
   );
 }

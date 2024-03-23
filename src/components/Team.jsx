@@ -2,6 +2,8 @@ import React from "react";
 import roper from "../assets/team/harper.png"; // Importing an image of a team member
 import { teamProfile } from "./common/Helper"; // Importing team member profiles from a helper file
 import WantToInvest from "./WantToInvest"; // Importing the WantToInvest component
+import Map from "./Map";
+import MapMobile from "./MapMobile";
 
 const Team = () => {
   return (
@@ -60,6 +62,12 @@ const Team = () => {
         })}
       </div>
       {/* Rendering the WantToInvest component */}
+      <div className=" lg:block hidden">
+        <Map />
+      </div>
+      <div className=" lg:hidden">
+        <MapMobile />
+      </div>
       <WantToInvest />
     </div>
   );
