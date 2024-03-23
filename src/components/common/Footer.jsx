@@ -8,9 +8,16 @@ const Footer = () => {
     <div className="bg-aquaSprint pt-[70px]" id="contact">
       <div className="max-w-[1170px] mx-auto px-4 2xl:px-0">
         {/* Logo */}
-        {/* <img src={footer} alt="logo" className=" max-w-[148px] mx-auto mb-7" /> */}
-        <img src={footer} alt="logo" className=" max-w-[148px] mx-auto mb-7" />
-
+        <div className=" flex justify-center items-center">
+          <a href="#">
+            {" "}
+            <img
+              src={footer}
+              alt="logo"
+              className=" max-w-[148px] mx-auto mb-7"
+            />
+          </a>
+        </div>
         {/* Main message */}
         <p className=" max-w-[700px] md:text-lg text-md text-fireFly font-poppins font-normal text-center mx-auto mb-[52px]">
           By implementing strategies such as composting, mulching, and

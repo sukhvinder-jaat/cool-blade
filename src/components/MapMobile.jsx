@@ -29,7 +29,7 @@ const MapMobile = () => {
         </div>
         <div className=" md:w-4/12 sm:w-6/12 w-full max-w-[343px] sm:max-w-full sm:mx-0 mx-auto sm:px-2">
           <div className=" rounded-lg min-h-[292px] bg-forestry bg-cover bg-no-repeat pt-[30px] px-[30px]">
-            {/* engage student */}
+         
             {/* our forestry*/}
             <div className=" bg-messageRight pt-[15px] pb-5 px-5 max-w-[300px]  bg-100">
               <p className=" font-poppins font-normal text-sm text-fireFly">
