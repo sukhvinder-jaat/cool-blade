@@ -1,5 +1,5 @@
 import React from "react";
-import map from "../assets/map/map.png";
+import map from "../assets/map/map.webp";
 const Map = () => {
   return (
     <div className=" max-w-[1440px] mx-auto relative xl:min-h-[1390px] lg:min-h-[1210px]">

@@ -15,7 +15,11 @@ const Problem = () => {
         <div className="flex flex-wrap mb-12 md:mb-[100px]">
           {/* Image of a girl */}
           <div className="lg:w-4/12 w-full flex justify-center lg:justify-start lg:mb-0 mb-7">
-            <img src={girl} alt="girl" className="w-full max-w-[262px]" />
+            <img
+              src={girl}
+              alt="girl"
+              className="w-full max-w-[262px] max-h-[236px]"
+            />
           </div>
           <div className="lg:w-8/12 w-full flex flex-col lg:items-start items-center text-center lg:text-start">
             {/* Problem statement title */}

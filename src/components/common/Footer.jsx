@@ -1,5 +1,5 @@
 import React from "react";
-import footer from "../../assets/footer/logo.svg";
+import footer from "../../assets/footer/animating_logo.gif";
 import { contact } from "./Helper";
 
 // Define Footer component
@@ -8,6 +8,7 @@ const Footer = () => {
     <div className="bg-aquaSprint pt-[70px]" id="contact">
       <div className="max-w-[1170px] mx-auto px-4 2xl:px-0">
         {/* Logo */}
+        {/* <img src={footer} alt="logo" className=" max-w-[148px] mx-auto mb-7" /> */}
         <img src={footer} alt="logo" className=" max-w-[148px] mx-auto mb-7" />
 
         {/* Main message */}

@@ -4,7 +4,7 @@ import tree from "../assets/hero/tree.webp"; // Importing the image
 
 const Hero = () => {
   return (
-    <div className="md:min-h-[70vh] flex flex-col">
+    <div className="flex flex-col lg:pt-0 pt-[96px]">
       {/* Rendering the navigation bar */}
       <NavBar />
       <div className="flex-grow-[1] max-w-[1440px] mx-auto">
