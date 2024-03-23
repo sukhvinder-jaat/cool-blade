@@ -151,18 +151,38 @@ export const Contact = () => {
 export const NavLine = () => {
   return (
     <svg
-      className="block h-6 w-6"
-      xmlns="http://www.w3.org/2000/svg"
+      width="73"
+      height="59"
+      className="max-w-6 max-h-5 group"
+      viewBox="0 0 73 59"
       fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M4 6h16M4 12h16m-7 6h7"
+      <rect
+        x="72.2847"
+        y="59"
+        width="50.3769"
+        className=" group-hover:w-full transition-all ease-in-out duration-300"
+        height="8.9769"
+        transform="rotate(-180 72.2847 59)"
+        fill="white"
+      />
+      <rect
+        x="72.2847"
+        y="37.2154"
+        width="72.1615"
+        height="8.9769"
+        transform="rotate(-180 72.2847 37.2154)"
+        fill="white"
+      />
+      <rect
+        x="72.2847"
+        y="14.9769"
+        className=" group-hover:w-full transition-all ease-in-out duration-300"
+        width="50.3769"
+        height="8.9769"
+        transform="rotate(-180 72.2847 14.9769)"
+        fill="white"
       />
     </svg>
   );

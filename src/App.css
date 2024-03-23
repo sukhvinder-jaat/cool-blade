@@ -130,6 +130,17 @@
 .bg-100 {
   background-size: 100% 100% !important;
 }
-.custom_curser {
-  cursor: url("./assets/hero/tree.webp");
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-treeGreen to-hippyGreen rounded;
 }
